@@ -6,8 +6,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,19 +16,19 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-public class BillingDetails {
+@Table(name="orders_table")
+public class Orders {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer billingId;
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer orderId;
 	
-	@OneToOne
-	private Orders orderid;
-	
-	@OneToOne
-	private Customer customerid;
+	@ManyToOne
+	@NotNull
+	private Customer customerId;
 	
 	@OneToMany
+	@NotNull
 	private List<VegetableDTO> vegetableList;
 	
 	@NotNull
@@ -35,5 +36,4 @@ public class BillingDetails {
 	
 	@NotNull
 	private String status;
-	
 }
