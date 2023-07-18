@@ -1,63 +1,62 @@
 # Online Vegetable Sales Application
 
-This project aims to develop an online vegetable shopping application that allows customers to conveniently purchase vegetables. Customers can provide feedback and ratings for their orders, while the admin effectively manages the stock. The application is built using Core Java, JPA with Hibernate, and Spring Boot with Rest Controller.
+This project aims to develop a RESTful API for an online vegetable shopping application. The API will enable customers to conveniently purchase vegetables and provide feedback and ratings for their orders. The admin will be able to manage the stock efficiently. The application will be built using Core Java, JPA with Hibernate, and Spring Boot with Rest Controller.
 
 ## Collaborators
 
-- Akhtar Ansari (Git Username: [akhtaransari](https://github.com/akhtaransari)) - Project Leader
-- Sagar Nikhare (Git Username: [sagu29](https://github.com/sagu29)) - Team Member
-- Sheik Kalibullah (Git Username: [sheikmohameddashleem](https://github.com/sheikmohameddashleem)) - Team Member
-
-Please refer to the respective Git usernames for individual contributions and collaboration in the project.
+- **Akhtar Ansari** (Git Username: [akhtaransari](https://github.com/akhtaransari)) - Project Leader
+- **Sagar Nikhare** (Git Username: [sagu29](https://github.com/sagu29)) - Team Member
+- **Sheik Kalibullah** (Git Username: [sheikmohameddashleem](https://github.com/sheikmohameddashleem)) - Team Member
 
 ## Task Division
 
-The project will be completed within 4 days, and tasks have been divided among the team members and project leader as follows:
+The project will be completed within 4 days, with tasks assigned as follows:
 
 ### Akhtar Ansari
-- Set up the project structure and initial configuration
-- Implement core Java logic for handling customer orders
-- Design and implement the database schema using JPA with Hibernate
+- Set up the project structure and configuration
+- Implement the API endpoints for handling customer orders
+- Design and implement the database using JPA with Hibernate
 - Integrate customer feedback and ratings feature
 
 ### Sagar Nikhare
-- Develop the frontend user interface for the online vegetable store
-- Implement shopping cart functionality
-- Design and implement RESTful APIs using Spring Boot with Rest Controller
 - Collaborate with the backend team for seamless integration
+- Assist in designing the API endpoints and data models
+- Conduct thorough testing and bug fixing
+- Assist in documentation and project setup
 
 ### Sheik Kalibullah
-- Implement the admin dashboard for stock management
-- Develop functionalities for adding and removing vegetables from stock
-- Implement authentication and authorization for admin access
-- Collaborate with the frontend team for seamless integration
+- Collaborate with the backend team for seamless integration
+- Assist in designing the API endpoints and data models
+- Conduct thorough testing and bug fixing
+- Assist in documentation and project setup
 
 ## Project Implementation Timeline
 
-We have planned to implement this project within a timeline of 4 days, and the tasks have been assigned accordingly.
+We have planned the project implementation timeline as follows:
 
 ### Day 1: Project Setup and Core Functionality
-- Set up the project structure and initial configuration.
-- Implement core Java logic for handling customer orders.
-- Design and implement the database schema using JPA with Hibernate.
+- Set up the project structure and initial configuration
+- Implement the API endpoints for customer orders, including CRUD operations
+- Design and implement the database schema using JPA with Hibernate
 
-### Day 2: Frontend Development and API Implementation
-- Develop the frontend user interface for the online vegetable store.
-- Implement shopping cart functionality.
-- Design and implement RESTful APIs using Spring Boot with Rest Controller.
+### Day 2: Feedback and Ratings Integration
+- Implement the API endpoints for customer feedback and ratings
+- Integrate the feedback and ratings functionality with the order endpoints
+- Conduct thorough testing and bug fixing
 
-### Day 3: Admin Dashboard and Stock Management
-- Implement the admin dashboard for stock management.
-- Develop functionalities for adding and removing vegetables from stock.
-- Implement authentication and authorization for admin access.
+### Day 3: Admin Stock Management
+- Implement the API endpoints for admin stock management, including CRUD operations for vegetables
+- Implement authentication and authorization for admin access
+- Conduct thorough testing and bug fixing
 
-### Day 4: Integration and Final Touches
-- Collaborate with the frontend team for seamless integration.
-- Integrate customer feedback and ratings feature.
-- Conduct thorough testing and bug fixing.
-- Update documentation and prepare for project submission.
+### Day 4: Integration, Testing, and Final Touches
+- Collaborate with the team to ensure seamless integration of the API endpoints
+- Conduct comprehensive testing of all endpoints and functionalities
+- Perform any necessary bug fixing and refinements
+- Finalize project documentation and prepare for submission
 
-By following this timeline and effectively collaborating within the team, we aim to successfully complete the project within 4 days, ensuring the delivery of a fully functional online vegetable sales application.
+By following this timeline and effectively collaborating within the team, we aim to successfully complete the project within 4 days, delivering a fully functional RESTful API for the online vegetable sales application.
+
 
 ## Features
 
