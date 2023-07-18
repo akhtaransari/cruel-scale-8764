@@ -1,2 +1,114 @@
-# cruel-scale-8764
- an online vegetable shopping app allowing customers to conveniently purchase vegetables. Customers can provide feedback and ratings for orders, while the admin efficiently manages stock. Implemented with Core Java, JPA with Hibernate, and Spring Boot with Rest Controller.
+# Online Vegetable Sales Application
+
+This project aims to develop an online vegetable shopping application that allows customers to conveniently purchase vegetables. Customers can provide feedback and ratings for their orders, while the admin effectively manages the stock. The application is built using Core Java, JPA with Hibernate, and Spring Boot with Rest Controller.
+
+## Collaborators
+
+- Akhtar Ansari (Git Username: [akhtaransari](https://github.com/akhtaransari)) - Project Leader
+- Sagar Nikhare (Git Username: [sagu29](https://github.com/sagu29)) - Team Member
+- Sheik Kalibullah (Git Username: [sheikmohameddashleem](https://github.com/sheikmohameddashleem)) - Team Member
+
+Please refer to the respective Git usernames for individual contributions and collaboration in the project.
+
+## Task Division
+
+The project will be completed within 4 days, and tasks have been divided among the team members and project leader as follows:
+
+### Akhtar Ansari
+- Set up the project structure and initial configuration
+- Implement core Java logic for handling customer orders
+- Design and implement the database schema using JPA with Hibernate
+- Integrate customer feedback and ratings feature
+
+### Sagar Nikhare
+- Develop the frontend user interface for the online vegetable store
+- Implement shopping cart functionality
+- Design and implement RESTful APIs using Spring Boot with Rest Controller
+- Collaborate with the backend team for seamless integration
+
+### Sheik Kalibullah
+- Implement the admin dashboard for stock management
+- Develop functionalities for adding and removing vegetables from stock
+- Implement authentication and authorization for admin access
+- Collaborate with the frontend team for seamless integration
+
+## Project Implementation Timeline
+
+We have planned to implement this project within a timeline of 4 days, and the tasks have been assigned accordingly.
+
+### Day 1: Project Setup and Core Functionality
+- Set up the project structure and initial configuration.
+- Implement core Java logic for handling customer orders.
+- Design and implement the database schema using JPA with Hibernate.
+
+### Day 2: Frontend Development and API Implementation
+- Develop the frontend user interface for the online vegetable store.
+- Implement shopping cart functionality.
+- Design and implement RESTful APIs using Spring Boot with Rest Controller.
+
+### Day 3: Admin Dashboard and Stock Management
+- Implement the admin dashboard for stock management.
+- Develop functionalities for adding and removing vegetables from stock.
+- Implement authentication and authorization for admin access.
+
+### Day 4: Integration and Final Touches
+- Collaborate with the frontend team for seamless integration.
+- Integrate customer feedback and ratings feature.
+- Conduct thorough testing and bug fixing.
+- Update documentation and prepare for project submission.
+
+By following this timeline and effectively collaborating within the team, we aim to successfully complete the project within 4 days, ensuring the delivery of a fully functional online vegetable sales application.
+
+## Features
+
+- User-friendly interface for easy browsing and purchasing of vegetables
+- Secure authentication and authorization for customers and admin access
+- Shopping cart functionality to allow users to add/remove items before checkout
+- Integration of customer feedback and ratings to enhance user experience
+- Efficient stock management by the admin with the ability to add/remove vegetables
+- Automated email notifications for order confirmation and updates
+- Support for multiple payment options, including credit/debit cards and online wallets
+- Order tracking and delivery status updates for customers
+- Analytics and reporting for sales, popular vegetables, and customer behavior
+- Responsive design to ensure compatibility with different devices and screen sizes
+
+## Usage
+
+1. Access the application via the provided URL or localhost.
+2. Browse the available vegetables and add them to the cart.
+3. Proceed to checkout and provide the necessary details.
+4. After completing the purchase, customers can provide feedback and ratings for their orders.
+5. Admins can manage the stock by adding or removing vegetables as needed.
+6. Customers receive email notifications for order confirmation and updates.
+7. Customers can track their orders and receive delivery status updates.
+8. Admins can generate reports and analyze sales, popular vegetables, and customer behavior.
+
+## Contributing
+
+To contribute to this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+3. Make the necessary changes and commit them:
+4. Push to the branch:
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Additional Guidelines
+
+To ensure the success and quality of the project, please adhere to the following guidelines:
+
+- Follow the coding style and conventions agreed upon by the team.
+- Write clean, modular, and maintainable code.
+- Document your code adequately, including functions, classes, and any important implementation details.
+- Write comprehensive test cases to ensure proper functionality and handle edge cases.
+- Conduct thorough testing before submitting any changes or additions.
+- Keep the project repository organized, with clear separation of code, documentation, and any additional resources.
+- Regularly communicate with the team and update the project leader on progress, challenges, and any updates regarding assigned tasks.
+- Respect deadlines and strive to complete tasks within the allocated timeframe.
+- Be open to feedback and actively participate in discussions to improve the project's overall quality and performance.
+- Regularly update the project documentation to reflect any changes or additions to the application.
+
