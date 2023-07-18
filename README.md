@@ -1,4 +1,4 @@
-# Online Vegetable Sales Application
+# Online Vegetable Sales Application <p> <img src="logo.png" alt="Project Diagram" width="150" style="border: 1px solid black; border-radius: 10px;"> </p>
 
 This project aims to develop a RESTful API for an online vegetable shopping application. The API will enable customers to conveniently purchase vegetables and provide feedback and ratings for their orders. The admin will be able to manage the stock efficiently. The application will be built using Core Java, JPA with Hibernate, and Spring Boot with Rest Controller.
 
