@@ -1,39 +1,33 @@
-package com.masai.VeggieCart.Model;
-
+package com.TheVeggieCart.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @NoArgsConstructor
-public class VegetableDTO {
+public class Admin {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long vegId;
-	
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer customerId;
+
 	@NotNull
-	@Size(min=3)
+	@Min(value=3)
 	private String name;
-	
+
 	@NotNull
-	private String type; 
-	
+	@Min(value = 10)
+	private String contactNumber;
+
 	@NotNull
-	@Min(value=20)
-	private Double price;
-	
-	@NotNull
-	@Min(value=1)
-	private Double quantity;
-	
-	
+	@Email
+	private String email;
 }

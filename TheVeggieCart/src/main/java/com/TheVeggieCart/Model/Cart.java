@@ -1,12 +1,14 @@
-package com.masai.VeggieCart.Model;
+package com.TheVeggieCart.Model;
 
-import jakarta.persistence.Embedded;
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Min;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,21 +16,18 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-public class Admin {
+public class Cart {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer customerId;
+	private Integer cartId;
 
+	@OneToOne
 	@NotNull
-	@Min(value=3)
-	private String name;
+	private Customer customerId;
+	
+	@OneToMany
+	private List<VegetableDTO> vegitableList=new ArrayList<>();
 
-	@NotNull
-	@Min(value = 10)
-	private String contactNumber;
-
-	@NotNull
-	@Email
-	private String email;
+	
 }

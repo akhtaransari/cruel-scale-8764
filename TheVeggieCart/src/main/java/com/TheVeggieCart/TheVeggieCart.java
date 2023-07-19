@@ -1,4 +1,4 @@
-package com.masai.VeggieCart;
+package com.TheVeggieCart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
