@@ -1,4 +1,5 @@
-package com.masai.VeggieCart.Model;
+package com.TheVeggieCart.Model;
+
 
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -7,7 +8,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Transient;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;

@@ -1,14 +1,14 @@
-package com.masai.VeggieCart.Model;
+package com.TheVeggieCart.Model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,18 +16,24 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-public class Cart {
+@Table(name="orders_table")
+public class Orders {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer cartId;
-
-	@OneToOne
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer orderId;
+	
+	@ManyToOne
 	@NotNull
 	private Customer customerId;
 	
 	@OneToMany
-	private List<VegetableDTO> vegitableList=new ArrayList<>();
-
+	@NotNull
+	private List<VegetableDTO> vegetableList;
 	
+	@NotNull
+	private Double totalAmount;
+	
+	@NotNull
+	private String status;
 }

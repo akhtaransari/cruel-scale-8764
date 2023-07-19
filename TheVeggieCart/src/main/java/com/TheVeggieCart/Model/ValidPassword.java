@@ -1,4 +1,4 @@
-package com.masai.VeggieCart.Model;
+package com.TheVeggieCart.Model;
 
 import jakarta.validation.Payload;
 

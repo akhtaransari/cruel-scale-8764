@@ -1,4 +1,4 @@
-package com.masai.VeggieCart.Model;
+package com.TheVeggieCart.Model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;

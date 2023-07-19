@@ -1,12 +1,9 @@
-package com.masai.VeggieCart.Model;
-
-import java.util.List;
+package com.TheVeggieCart.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
@@ -15,25 +12,24 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-public class BillingDetails {
+public class Feedback {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer billingId;
-	
-	@OneToOne
-	private Orders orderid;
-	
-	@OneToOne
-	private Customer customerid;
-	
-	@OneToMany
-	private List<VegetableDTO> vegetableList;
+	private Integer feedbackId;
 	
 	@NotNull
-	private Double totalAmount;
+	@OneToOne
+	private Customer customerId;
 	
 	@NotNull
-	private String status;
+	@OneToOne
+	private VegetableDTO vegetableId;
+	
+	@NotNull
+	private Integer rating;
+	
+	@NotNull
+	private String comments;
 	
 }

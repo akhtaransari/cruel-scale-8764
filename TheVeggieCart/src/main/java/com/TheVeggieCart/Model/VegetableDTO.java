@@ -1,39 +1,38 @@
-package com.masai.VeggieCart.Model;
+package com.TheVeggieCart.Model;
 
-import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name="orders_table")
-public class Orders {
+public class VegetableDTO {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer orderId;
-	
-	@ManyToOne
-	@NotNull
-	private Customer customerId;
-	
-	@OneToMany
-	@NotNull
-	private List<VegetableDTO> vegetableList;
+	private Long vegId;
 	
 	@NotNull
-	private Double totalAmount;
+	@Size(min=3)
+	private String name;
 	
 	@NotNull
-	private String status;
+	private String type; 
+	
+	@NotNull
+	@Min(value=20)
+	private Double price;
+	
+	@NotNull
+	@Min(value=1)
+	private Double quantity;
+		
 }
