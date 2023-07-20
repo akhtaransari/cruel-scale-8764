@@ -18,7 +18,7 @@ import com.TheVeggieCart.Model.Feedback;
 import com.TheVeggieCart.Model.Orders;
 import com.TheVeggieCart.Model.User;
 import com.TheVeggieCart.Model.VegetableDTO;
-import com.TheVeggieCart.Services.PasswordChangeRequest;
+import com.TheVeggieCart.Service.PasswordChangeRequest;
 
 @RestController
 public class UserController {

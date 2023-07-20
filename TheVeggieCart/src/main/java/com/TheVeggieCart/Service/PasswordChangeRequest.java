@@ -1,4 +1,4 @@
-package com.TheVeggieCart.Services;
+package com.TheVeggieCart.Service;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
