@@ -23,12 +23,11 @@
                 <img src="./l1.png" alt="">
             </div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
                 <li><a href="#projects" class="menu-btn">Partners</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li><a href="#" class="menu-btn"> Login/Register</a></li>
+                <li><a href="#" class="menu-btn" id="login"> Login/Register</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -55,7 +54,7 @@
             <div class="max-width">
             <div class="about-content"> 
                 <div class="column left">
-                    <img class="home-img" src="./logo.png" alt="Vegetables">
+                    <img class="home-img" src="./images/maxresdefault.jpg"" alt="Vegetables">
                 </div>
                 <div class="column right">
                     <div class="text"  >We are dedicated to providing you with the freshest and healthiest vegetables.</div>
@@ -115,7 +114,7 @@
                             
                         </div>
                         <div class="row" id="contact-phone">
-                            <a  href="#">  <i class="fa-solid fa-phone" style="color: #f42e0b;"></i></a>
+                            <a  href="#">  <i class="fa-solid fa-phone" style="color: green;"></i></a>
                            <div class="info">
                                <div class="sub-title"> +91 9560726104 </div>
                            </div>
@@ -165,7 +164,113 @@
     <footer>
         <span>&copy; 2023 TheVeggieCart. All rights reserved.</span>
     </footer>
-    
-    <script src="index.js"></script>
+
+    <section class="container forms">
+        <i class="fa-solid fa-xmark"></i>
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="images/google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <span id="close-btn">Close</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create password" class="password">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Signup</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="images/google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <span id="close-btn">Close</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>    
