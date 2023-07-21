@@ -1,11 +1,15 @@
 package com.TheVeggieCart.Model;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Transient;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
@@ -47,5 +51,9 @@ public class Customer {
 	@Transient
 	@ValidPassword
 	private String confirmPassword;
+	
+	@OneToMany
+	private List<VegetableDTO> vegitableList=new ArrayList<>();
+	
 
 }

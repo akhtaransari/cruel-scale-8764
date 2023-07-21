@@ -1,24 +1,17 @@
 package com.TheVeggieCart.Service;
 
 import java.time.LocalDate;
+import com.TheVeggieCart.Model.Orders;
 import java.util.List;
 
-import com.TheVeggieCart.Model.Orders;
-
 public interface IOrderService {
+	Orders addOrder(Orders order, Integer customerID);
 
-	Orders addOrder(Orders order);
-
-	Orders viewOrder(Orders order);
+	//Orders viewOrder(Orders order);
 
 	Orders updateOrderDetails(Orders order);
 
-	List<Orders> viewAllOrders(int custid);
-
-	List<Orders> viewAllOrders(LocalDate date);
-
-	List<Orders> viewOrderList();
+	List<Orders> viewAllOrders();
 
 	Orders cancelOrder(int orderid);
-
 }

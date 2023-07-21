@@ -6,7 +6,7 @@ public interface IBillingService {
 
     BillingDetails addBill(BillingDetails bill);
     BillingDetails updateBill(BillingDetails bill);
-    BillingDetails viewBill(int id);
+	BillingDetails viewBill(int id);
 
 }
 
