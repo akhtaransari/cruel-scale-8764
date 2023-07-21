@@ -4,6 +4,14 @@ const forms = document.querySelector(".forms"),
 const loginDiv = document.getElementById("login");
 const loginContainer = document.querySelector(".container");
 
+const closeBtn = document.querySelectorAll("#close-btn")
+
+closeBtn.forEach(btn =>{
+    btn.addEventListener("click",()=>{
+        loginContainer.style.display = "none"
+    })
+});
+
 pwShowHide.forEach(eyeIcon => {
     eyeIcon.addEventListener("click", () => {
         let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
