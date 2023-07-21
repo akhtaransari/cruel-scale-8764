@@ -152,7 +152,7 @@ section .title::after {
 }
 
 #nav-menu .menu li a:hover {
-  color: green;
+  color: black;
 }
 
 #nav-menu.sticky .menu li a:hover {
