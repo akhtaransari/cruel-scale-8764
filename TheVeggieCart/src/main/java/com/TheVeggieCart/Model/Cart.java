@@ -4,6 +4,9 @@ package com.TheVeggieCart.Model;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,6 +32,7 @@ public class Cart {
 	
 	@OneToMany
 	private List<VegetableDTO> vegitableList=new ArrayList<>();
-
+	
+	
 	
 }
