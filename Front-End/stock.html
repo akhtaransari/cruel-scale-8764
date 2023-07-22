@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Stock - TheVeggieCart</title>
+    <link rel="stylesheet" href="stock.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">TheVeggieCart</div>
+      <div class="navbar-center">Admin Dashboard</div>
+      <div class="navbar-right">
+        <button class="signout-button">Sign Out</button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h2>Manage Stock</h2>
+      <table class="stock-table">
+        <thead>
+          <tr>
+            <th>Vegetable ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Type</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="stock-body">
+          <!-- Dummy data will be added here -->
+        </tbody>
+      </table>
+
+      <button class="add-product-button" onclick="openAddProductForm()">
+        Add Product
+      </button>
+
+      <div class="modal" id="add-product-modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeAddProductForm()">&times;</span>
+          <form class="add-product-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="type">Type:</label>
+            <input type="text" id="type" name="type" required />
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required />
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required />
+
+            <button type="submit" class="submit-button">Add Product</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Update Product -->
+    <div class="modal" id="update-product-modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeUpdateProductForm()">&times;</span>
+        <h2>Update Product</h2>
+        <form class="update-product-form" onsubmit="updateProduct(event)">
+          <input type="hidden" id="update-vegId" name="vegId" />
+          <label for="update-name">Name:</label>
+          <input type="text" id="update-name" name="name" required />
+
+          <label for="update-type">Type:</label>
+          <input type="text" id="update-type" name="type" required />
+
+          <label for="update-price">Price:</label>
+          <input type="number" id="update-price" name="price" required />
+
+          <label for="update-quantity">Quantity:</label>
+          <input type="number" id="update-quantity" name="quantity" required />
+
+          <button type="submit" class="update-button">Update Product</button>
+        </form>
+      </div>
+    </div>
+    <script src="stock.js"></script>
+  </body>
+</html>

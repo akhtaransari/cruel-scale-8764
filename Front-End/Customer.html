@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Customer | TheVeggieCart</title>
+    <link rel="stylesheet" href="Customer.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-left">TheVeggieCart</div>
+      <div class="navbar-center">Admin Dashboard</div>
+      <div class="navbar-right">
+        <button class="signout-button">Sign Out</button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h2>Manage Customer</h2>
+      <table class="customer-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Email</th>
+            <th>Orders</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="customer-body">
+          <!-- Table rows will be dynamically populated here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="Customer.js"></script>
+  </body>
+</html>
