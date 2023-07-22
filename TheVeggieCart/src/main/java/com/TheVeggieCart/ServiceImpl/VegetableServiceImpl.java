@@ -1,15 +1,18 @@
-package com.TheVeggieCart.Service;
+package com.TheVeggieCart.ServiceImpl;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.TheVeggieCart.Exception.VegetableNotFoundException;
 import com.TheVeggieCart.Model.VegetableDTO;
 import com.TheVeggieCart.Repository.VegetableDTORepository;
+import com.TheVeggieCart.Service.IVegetableService;
 
-public class IVegetableServiceImpl implements IVegetableService {
+@Service
+public class VegetableServiceImpl implements IVegetableService {
 
 	@Autowired
 	private VegetableDTORepository vegetableDTORepository;
