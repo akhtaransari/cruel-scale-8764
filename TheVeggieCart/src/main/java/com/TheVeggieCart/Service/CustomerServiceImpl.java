@@ -1,3 +1,4 @@
+
 package com.TheVeggieCart.Service;
 
 import java.util.List;
@@ -8,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.TheVeggieCart.Exception.OrderNotFoundException;
 import com.TheVeggieCart.Exception.UserNotFoundException;
 import com.TheVeggieCart.Model.Customer;
-import com.TheVeggieCart.Model.Orders;
 import com.TheVeggieCart.Repository.CustomerRepository;
 
 public class CustomerServiceImpl implements ICustomerService {
