@@ -1,7 +1,5 @@
 package com.TheVeggieCart.Service;
 
-package com.TheVeggieCart.Service;
-
 import com.TheVeggieCart.Model.VegetableDTO;
 
 import java.util.List;

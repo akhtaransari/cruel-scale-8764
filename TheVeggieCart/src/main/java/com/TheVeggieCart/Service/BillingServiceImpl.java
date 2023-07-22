@@ -1,5 +1,7 @@
 package com.TheVeggieCart.Service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.TheVeggieCart.Exception.BillNotFoundException;
@@ -38,11 +40,11 @@ public class BillingServiceImpl implements IBillingService {
 
 	@Override
 	public BillingDetails viewBill(int id) {
-		BillingDetails b = billingRepository.getById(id);
-		if(b == null) {
-			throw new BillNotFoundException("Bill not found with ID: " + b.getBillingId());
+		Optional<BillingDetails> findById = billingRepository.findById(id);
+		if(!findById.isPresent()) {
+			throw new BillNotFoundException("Bill not found with ID: " + id);
 		}
-		return b;
+		return findById.get();
 	}
 
 

@@ -2,7 +2,7 @@ package com.TheVeggieCart.Controller;
 
 import java.util.List;
 
-
+import org.springframework.boot.autoconfigure.neo4j.Neo4jProperties.Authentication;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -28,10 +28,10 @@ public class UserController {
         return new ResponseEntity<>("User registered successfully", HttpStatus.CREATED);
     }
 
-//    @PostMapping("/login/auth")
-//    public ResponseEntity<String> loginUser(@RequestBody Authentication auth) {
-//        return new ResponseEntity<>("User logged in successfully", HttpStatus.OK);
-//    }
+    @PostMapping("/login/auth")
+    public ResponseEntity<String> loginUser(@RequestBody Authentication auth) {
+        return new ResponseEntity<>("User logged in successfully", HttpStatus.OK);
+    }
 
     @GetMapping("/users/{userId}")
     public ResponseEntity<User> getUserProfile(@PathVariable Long userId) {
