@@ -142,3 +142,297 @@ Caused by: java.lang.ClassNotFoundException: Authentication
 2023-07-22T09:18:57.113+05:30  INFO 997 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-07-22T09:18:57.114+05:30  INFO 997 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
 2023-07-22T09:18:57.121+05:30  INFO 997 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-07-22T21:39:40.620+05:30  INFO 3443 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : Starting TheVeggieCart using Java 17.0.6 with PID 3443 (/Users/akhtar/Desktop/cruel-scale-8764/TheVeggieCart/target/classes started by akhtar in /Users/akhtar/Desktop/cruel-scale-8764/TheVeggieCart)
+2023-07-22T21:39:40.622+05:30  INFO 3443 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : No active profile set, falling back to 1 default profile: "default"
+2023-07-22T21:39:40.683+05:30  INFO 3443 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-22T21:39:40.684+05:30  INFO 3443 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-22T21:39:41.786+05:30  INFO 3443 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-22T21:39:41.883+05:30  INFO 3443 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 8 JPA repository interfaces.
+2023-07-22T21:39:42.593+05:30  INFO 3443 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-22T21:39:42.606+05:30  INFO 3443 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-22T21:39:42.606+05:30  INFO 3443 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-22T21:39:42.687+05:30  INFO 3443 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-22T21:39:42.688+05:30  INFO 3443 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2003 ms
+2023-07-22T21:39:42.892+05:30  INFO 3443 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-22T21:39:43.015+05:30  INFO 3443 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-22T21:39:43.019+05:30  INFO 3443 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-22T21:39:43.205+05:30  INFO 3443 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-22T21:39:43.386+05:30  INFO 3443 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-22T21:39:43.408+05:30  INFO 3443 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-22T21:39:44.006+05:30  INFO 3443 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@590132cb
+2023-07-22T21:39:44.010+05:30  INFO 3443 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-22T21:39:44.502+05:30  INFO 3443 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-22T21:39:45.431+05:30  INFO 3443 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-22T21:39:45.799+05:30  INFO 3443 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-22T21:39:46.361+05:30  WARN 3443 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-22T21:39:47.212+05:30  INFO 3443 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-22T21:39:47.253+05:30  INFO 3443 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-22T21:39:47.265+05:30  INFO 3443 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : Started TheVeggieCart in 7.164 seconds (process running for 8.266)
+2023-07-22T21:40:00.695+05:30  INFO 3443 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-22T21:40:00.696+05:30  INFO 3443 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-22T21:40:00.698+05:30  INFO 3443 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-22T21:40:01.770+05:30  INFO 3443 --- [http-nio-8080-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 513 ms
+2023-07-22T21:40:16.641+05:30  INFO 3443 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-07-22T21:40:16.648+05:30  INFO 3443 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-22T21:40:16.650+05:30  INFO 3443 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-22T21:40:16.661+05:30  INFO 3443 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-22T21:40:16.666+05:30  INFO 3443 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-22T21:40:16.676+05:30  INFO 3443 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-22T23:23:45.592+05:30  INFO 1715 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : Starting TheVeggieCart using Java 17.0.6 with PID 1715 (/Users/akhtar/Desktop/cruel-scale-8764/TheVeggieCart/target/classes started by akhtar in /Users/akhtar/Desktop/cruel-scale-8764/TheVeggieCart)
+2023-07-22T23:23:45.594+05:30  INFO 1715 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : No active profile set, falling back to 1 default profile: "default"
+2023-07-22T23:23:45.654+05:30  INFO 1715 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-22T23:23:45.656+05:30  INFO 1715 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-22T23:23:46.639+05:30  INFO 1715 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-22T23:23:46.742+05:30  INFO 1715 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 8 JPA repository interfaces.
+2023-07-22T23:23:47.491+05:30  INFO 1715 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-22T23:23:47.509+05:30  INFO 1715 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-22T23:23:47.510+05:30  INFO 1715 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-22T23:23:47.601+05:30  INFO 1715 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-22T23:23:47.601+05:30  INFO 1715 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1944 ms
+2023-07-22T23:23:47.795+05:30  INFO 1715 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-22T23:23:47.902+05:30  INFO 1715 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-22T23:23:47.906+05:30  INFO 1715 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-22T23:23:48.086+05:30  INFO 1715 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-22T23:23:48.282+05:30  INFO 1715 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-22T23:23:48.301+05:30  INFO 1715 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-22T23:23:48.641+05:30  INFO 1715 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1517d6ba
+2023-07-22T23:23:48.644+05:30  INFO 1715 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-22T23:23:49.056+05:30  INFO 1715 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-22T23:23:49.977+05:30  INFO 1715 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-22T23:23:50.372+05:30  WARN 1715 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table billing_details add constraint FKj29n4kwuf83dq2553rimfxne6 foreign key (customerid_user_id) references customer (user_id)" via JDBC [Failed to add the foreign key constraint. Missing index for constraint 'FKj29n4kwuf83dq2553rimfxne6' in the referenced table 'customer']
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table billing_details add constraint FKj29n4kwuf83dq2553rimfxne6 foreign key (customerid_user_id) references customer (user_id)" via JDBC [Failed to add the foreign key constraint. Missing index for constraint 'FKj29n4kwuf83dq2553rimfxne6' in the referenced table 'customer']
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:574) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:514) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:446) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:268) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.TheVeggieCart.TheVeggieCart.main(TheVeggieCart.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
+Caused by: java.sql.SQLException: Failed to add the foreign key constraint. Missing index for constraint 'FKj29n4kwuf83dq2553rimfxne6' in the referenced table 'customer'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	... 42 common frames omitted
+
+2023-07-22T23:23:50.409+05:30  WARN 1715 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table cart add constraint FKhgevokexstpom3cv1gir0xf45 foreign key (customer_id_user_id) references customer (user_id)" via JDBC [Failed to add the foreign key constraint. Missing index for constraint 'FKhgevokexstpom3cv1gir0xf45' in the referenced table 'customer']
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table cart add constraint FKhgevokexstpom3cv1gir0xf45 foreign key (customer_id_user_id) references customer (user_id)" via JDBC [Failed to add the foreign key constraint. Missing index for constraint 'FKhgevokexstpom3cv1gir0xf45' in the referenced table 'customer']
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:574) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:514) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:446) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:268) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.10.jar:6.0.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.1.jar:3.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.1.jar:3.1.1]
+	at com.TheVeggieCart.TheVeggieCart.main(TheVeggieCart.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.1.1.jar:3.1.1]
+Caused by: java.sql.SQLException: Failed to add the foreign key constraint. Missing index for constraint 'FKhgevokexstpom3cv1gir0xf45' in the referenced table 'customer'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78) ~[hibernate-core-6.2.5.Final.jar:6.2.5.Final]
+	... 42 common frames omitted
+
+2023-07-22T23:23:50.604+05:30  INFO 1715 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-22T23:23:50.945+05:30  WARN 1715 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'billingService': No qualifying bean of type 'com.TheVeggieCart.ServiceImpl.BillingServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-07-22T23:23:50.946+05:30  INFO 1715 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-22T23:23:50.952+05:30  INFO 1715 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-22T23:23:50.970+05:30  INFO 1715 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-22T23:23:50.975+05:30  INFO 1715 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-22T23:23:50.995+05:30  INFO 1715 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-07-22T23:23:51.030+05:30 ERROR 1715 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field billingService in com.TheVeggieCart.Controller.UserController required a bean of type 'com.TheVeggieCart.ServiceImpl.BillingServiceImpl' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.TheVeggieCart.ServiceImpl.BillingServiceImpl' in your configuration.
+
+2023-07-22T23:26:27.710+05:30  INFO 1746 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : Starting TheVeggieCart using Java 17.0.6 with PID 1746 (/Users/akhtar/Desktop/cruel-scale-8764/TheVeggieCart/target/classes started by akhtar in /Users/akhtar/Desktop/cruel-scale-8764/TheVeggieCart)
+2023-07-22T23:26:27.713+05:30  INFO 1746 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : No active profile set, falling back to 1 default profile: "default"
+2023-07-22T23:26:27.785+05:30  INFO 1746 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-22T23:26:27.787+05:30  INFO 1746 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-22T23:26:28.809+05:30  INFO 1746 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-22T23:26:28.907+05:30  INFO 1746 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 8 JPA repository interfaces.
+2023-07-22T23:26:29.637+05:30  INFO 1746 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-22T23:26:29.649+05:30  INFO 1746 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-22T23:26:29.650+05:30  INFO 1746 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-22T23:26:29.721+05:30  INFO 1746 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-22T23:26:29.722+05:30  INFO 1746 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1933 ms
+2023-07-22T23:26:29.912+05:30  INFO 1746 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-22T23:26:30.007+05:30  INFO 1746 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-22T23:26:30.011+05:30  INFO 1746 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-22T23:26:30.193+05:30  INFO 1746 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-22T23:26:30.348+05:30  INFO 1746 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-22T23:26:30.367+05:30  INFO 1746 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-22T23:26:30.693+05:30  INFO 1746 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5870ada5
+2023-07-22T23:26:30.695+05:30  INFO 1746 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-22T23:26:31.098+05:30  INFO 1746 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-22T23:26:32.107+05:30  INFO 1746 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-22T23:26:32.419+05:30  INFO 1746 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-22T23:26:33.192+05:30  WARN 1746 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-22T23:26:33.911+05:30  INFO 1746 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79c31bb0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22794bf3, org.springframework.security.web.context.SecurityContextHolderFilter@6ffd59c0, org.springframework.security.web.header.HeaderWriterFilter@75743ace, org.springframework.web.filter.CorsFilter@724b9728, org.springframework.security.web.authentication.logout.LogoutFilter@6548cc55, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7a2306d5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1b208729, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5f60a959, com.TheVeggieCart.Utils.JwtTokenValidatorFilter@3e9f279e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@63d706d5, com.TheVeggieCart.Utils.JwtTokenGeneratorFilter@56d1c56d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@723dc772, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2638cc56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@780dfa48, org.springframework.security.web.session.SessionManagementFilter@39e590c7, org.springframework.security.web.access.ExceptionTranslationFilter@66cc2fb3, org.springframework.security.web.access.intercept.AuthorizationFilter@38d04ff4]
+2023-07-22T23:26:34.206+05:30  INFO 1746 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-22T23:26:34.268+05:30  INFO 1746 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-22T23:26:34.285+05:30  INFO 1746 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : Started TheVeggieCart in 7.043 seconds (process running for 8.245)
+2023-07-22T23:26:44.970+05:30  INFO 1746 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-22T23:26:44.971+05:30  INFO 1746 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-22T23:26:44.974+05:30  INFO 1746 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-22T23:26:45.948+05:30  INFO 1746 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 584 ms
+2023-07-22T23:27:29.574+05:30  INFO 1746 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-22T23:27:29.585+05:30  INFO 1746 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-22T23:27:29.587+05:30  INFO 1746 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-22T23:27:29.600+05:30  INFO 1746 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-22T23:27:29.606+05:30  INFO 1746 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-22T23:27:29.619+05:30  INFO 1746 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-22T23:27:29.749+05:30  INFO 1746 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : Starting TheVeggieCart using Java 17.0.6 with PID 1746 (/Users/akhtar/Desktop/cruel-scale-8764/TheVeggieCart/target/classes started by akhtar in /Users/akhtar/Desktop/cruel-scale-8764/TheVeggieCart)
+2023-07-22T23:27:29.751+05:30  INFO 1746 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : No active profile set, falling back to 1 default profile: "default"
+2023-07-22T23:27:29.968+05:30  INFO 1746 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-22T23:27:29.997+05:30  INFO 1746 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 8 JPA repository interfaces.
+2023-07-22T23:27:30.107+05:30  INFO 1746 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-22T23:27:30.108+05:30  INFO 1746 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-22T23:27:30.109+05:30  INFO 1746 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-22T23:27:30.125+05:30  INFO 1746 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-22T23:27:30.125+05:30  INFO 1746 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 372 ms
+2023-07-22T23:27:30.175+05:30  INFO 1746 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-22T23:27:30.183+05:30  INFO 1746 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-22T23:27:30.183+05:30  INFO 1746 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-22T23:27:30.184+05:30  INFO 1746 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-07-22T23:27:30.201+05:30  INFO 1746 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13a5103
+2023-07-22T23:27:30.201+05:30  INFO 1746 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-07-22T23:27:30.242+05:30  INFO 1746 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-22T23:27:30.367+05:30  INFO 1746 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-22T23:27:30.595+05:30  INFO 1746 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-22T23:27:30.805+05:30  WARN 1746 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-22T23:27:31.014+05:30  INFO 1746 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e4bbe13, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57370e9a, org.springframework.security.web.context.SecurityContextHolderFilter@156504ec, org.springframework.security.web.header.HeaderWriterFilter@2612b086, org.springframework.web.filter.CorsFilter@d126c4d, org.springframework.security.web.authentication.logout.LogoutFilter@1cee3f90, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4b4237b6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@295c4e04, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@477ac415, com.TheVeggieCart.Utils.JwtTokenValidatorFilter@141241cf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@26bd83f1, com.TheVeggieCart.Utils.JwtTokenGeneratorFilter@7b3ede09, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49e835a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a4d2a9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65d0a527, org.springframework.security.web.session.SessionManagementFilter@3c4de1f9, org.springframework.security.web.access.ExceptionTranslationFilter@72c5d294, org.springframework.security.web.access.intercept.AuthorizationFilter@4403a4c4]
+2023-07-22T23:27:31.099+05:30  INFO 1746 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-22T23:27:31.123+05:30  INFO 1746 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-22T23:27:31.133+05:30  INFO 1746 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : Started TheVeggieCart in 1.409 seconds (process running for 65.095)
+2023-07-22T23:27:31.138+05:30  INFO 1746 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-22T23:27:31.998+05:30  INFO 1746 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-07-22T23:27:32.002+05:30  INFO 1746 --- [RMI TCP Connection(3)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-22T23:27:32.011+05:30  INFO 1746 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-22T23:27:32.012+05:30  INFO 1746 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-07-22T23:27:32.020+05:30  INFO 1746 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-07-22T23:37:37.290+05:30  INFO 1905 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : Starting TheVeggieCart using Java 17.0.6 with PID 1905 (/Users/akhtar/Desktop/cruel-scale-8764/TheVeggieCart/target/classes started by akhtar in /Users/akhtar/Desktop/cruel-scale-8764/TheVeggieCart)
+2023-07-22T23:37:37.294+05:30  INFO 1905 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : No active profile set, falling back to 1 default profile: "default"
+2023-07-22T23:37:37.350+05:30  INFO 1905 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-22T23:37:37.350+05:30  INFO 1905 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-22T23:37:38.198+05:30  INFO 1905 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-22T23:37:38.299+05:30  INFO 1905 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 8 JPA repository interfaces.
+2023-07-22T23:37:38.964+05:30  INFO 1905 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-22T23:37:38.975+05:30  INFO 1905 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-22T23:37:38.975+05:30  INFO 1905 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-22T23:37:39.044+05:30  INFO 1905 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-22T23:37:39.044+05:30  INFO 1905 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
+2023-07-22T23:37:39.228+05:30  INFO 1905 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-22T23:37:39.308+05:30  INFO 1905 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-22T23:37:39.312+05:30  INFO 1905 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-22T23:37:39.461+05:30  INFO 1905 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-22T23:37:39.595+05:30  INFO 1905 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-22T23:37:39.613+05:30  INFO 1905 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-22T23:37:39.894+05:30  INFO 1905 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17f1f1b8
+2023-07-22T23:37:39.896+05:30  INFO 1905 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-22T23:37:40.253+05:30  INFO 1905 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-22T23:37:41.330+05:30  INFO 1905 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-22T23:37:41.533+05:30  INFO 1905 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-22T23:37:42.126+05:30  WARN 1905 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-22T23:37:42.672+05:30  INFO 1905 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7481e255, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13a5bfa, org.springframework.security.web.context.SecurityContextHolderFilter@10b2268, org.springframework.security.web.header.HeaderWriterFilter@605d47ca, org.springframework.web.filter.CorsFilter@1d7906f4, org.springframework.security.web.authentication.logout.LogoutFilter@67c737c5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17f1e781, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@23407712, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6361187a, com.TheVeggieCart.Utils.JwtTokenValidatorFilter@1889cd09, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@57844946, com.TheVeggieCart.Utils.JwtTokenGeneratorFilter@4bbfa069, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@136dbe0a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27dc1381, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ea4514c, org.springframework.security.web.session.SessionManagementFilter@66dddcd8, org.springframework.security.web.access.ExceptionTranslationFilter@4e5d71df, org.springframework.security.web.access.intercept.AuthorizationFilter@3452e713]
+2023-07-22T23:37:42.949+05:30  INFO 1905 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-22T23:37:42.988+05:30  INFO 1905 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-22T23:37:43.000+05:30  INFO 1905 --- [restartedMain] com.TheVeggieCart.TheVeggieCart          : Started TheVeggieCart in 6.128 seconds (process running for 7.052)
+2023-07-22T23:37:49.669+05:30  INFO 1905 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-07-22T23:37:49.677+05:30  INFO 1905 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-22T23:37:49.690+05:30  INFO 1905 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-22T23:37:49.695+05:30  INFO 1905 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-22T23:37:49.707+05:30  INFO 1905 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

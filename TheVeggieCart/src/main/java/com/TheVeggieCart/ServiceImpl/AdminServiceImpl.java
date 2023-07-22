@@ -1,4 +1,4 @@
-package com.TheVeggieCart.Service;
+package com.TheVeggieCart.ServiceImpl;
 
 import java.util.Optional;
 
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 
 import com.TheVeggieCart.Exception.AdminNotFoundException;
 import com.TheVeggieCart.Model.Admin;
-import com.TheVeggieCart.Model.Customer;
 import com.TheVeggieCart.Repository.AdminRepository;
+import com.TheVeggieCart.Service.IAdminService;
 
 @Service
 public class AdminServiceImpl implements IAdminService {
