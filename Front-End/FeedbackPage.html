@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #feedback-heading {
+            text-align: center;
+        }
+        #feedback-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        #feedback-table th, #feedback-table td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+        #feedback-table th {
+            background-color: #f2f2f2;
+        }
+        #feedback-table tr:hover {
+            background-color: #f9f9f9;
+        }
+        #feedback-form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #rating-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .rating-label {
+            margin-right: 10px;
+        }
+        #submit-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="feedback-heading">Share Your Feedback</h1>
+        <div id="feedback-form">
+            <h4>We greatly value and appreciate your feedback!</h4>
+            <form action="/submit-feedback" method="post">
+                <!-- <div class="form-group">
+                    <label for="customerId" class="form-label">Customer ID:</label>
+                    <input type="text" id="customerId" name="customerId" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="vegetableId" class="form-label">Vegetable ID:</label>
+                    <input type="text" id="vegetableId" name="vegetableId" class="form-input" required>
+                </div> -->
+                <div class="form-group">
+                    <label for="rating" class="form-label">Rating (1-5):</label>
+                    <select id="rating" name="rating" class="form-input" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments" class="form-label">Comments:</label>
+                    <textarea id="comments" name="comments" class="form-input" rows="4" required></textarea>
+                </div>
+                <input type="submit" value="Submit Feedback" id="submit-button">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
