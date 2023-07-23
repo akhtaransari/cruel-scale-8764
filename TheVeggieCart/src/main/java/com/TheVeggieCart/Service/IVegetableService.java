@@ -11,6 +11,7 @@ public interface IVegetableService {
 
 	VegetableDTO removeVegetable(VegetableDTO veg);
 
+	String deleteVeg(Long id);
 	List<VegetableDTO> viewAllVegetables();
 
 }

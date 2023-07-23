@@ -10,7 +10,7 @@ import com.TheVeggieCart.Model.Feedback;
 
 public interface IFeedbackService {
 
-    Feedback addFeedBack(Feedback feedBack, Long vegetableId, Integer customerId) throws VegetableNotFoundException, UserNotFoundException;
+    Feedback addFeedBack(Feedback feedBack, Integer orderId, Integer customerId) throws VegetableNotFoundException, UserNotFoundException;
 
     Feedback updateFeedBack(Feedback feedback) throws FeedbackNotFoundException;
 

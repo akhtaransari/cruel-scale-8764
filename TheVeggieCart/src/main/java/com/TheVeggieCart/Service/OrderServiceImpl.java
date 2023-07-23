@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.TheVeggieCart.Exception.OrderNotFoundException;
 import com.TheVeggieCart.Exception.UserNotFoundException;
@@ -14,6 +15,7 @@ import com.TheVeggieCart.Repository.CustomerRepository;
 import com.TheVeggieCart.Repository.OrdersRepository;
 import com.TheVeggieCart.Repository.VegetableDTORepository;
 
+@Service
 public class OrderServiceImpl implements IOrderService {
 
 	@Autowired

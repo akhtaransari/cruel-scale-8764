@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manage Stock | TheVeggieCart</title>
-    <link rel="stylesheet" href="stock.css" />
-    <script src="stock.js"></script>
+    <title>Manage Feedback | TheVeggieCart</title>
+    <link rel="stylesheet" href="feedback.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -14,9 +13,9 @@
         <span class="company-name">TheVeggieCart</span>
       </div>
       <div class="navbar-center">
-        <a href="stock.html" class="active">Manage Stock</a>
+        <a href="stock.html">Manage Stock</a>
         <a href="customer.html">Manage Customer</a>
-        <a href="feedback.html">Manage Feedback</a>
+        <a href="feedback.html" class="active">Manage Feedback</a>
       </div>
       <div class="navbar-right">
         <button class="signout-button">Sign Out</button>
@@ -24,26 +23,23 @@
     </nav>
 
     <div class="container">
-      <h2>Manage Stock</h2>
-      <table class="stock-table">
+      <h2>Manage Feedback</h2>
+      <table class="feedback-table">
         <thead>
           <tr>
+            <th>Feedback ID</th>
+            <th>Customer ID</th>
             <th>Vegetable ID</th>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Action</th>
+            <th>Rating</th>
+            <th>Comments</th>
           </tr>
         </thead>
-        <tbody id="stock-body">
+        <tbody id="feedback-body">
           <!-- Table rows will be dynamically populated here -->
         </tbody>
       </table>
-
-      <button class="add-button" onclick="openAddProductForm()">
-        Add a Product
-      </button>
     </div>
+
+    <script src="feedback.js"></script>
   </body>
 </html>

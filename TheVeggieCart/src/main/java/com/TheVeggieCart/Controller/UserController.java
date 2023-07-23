@@ -2,9 +2,11 @@ package com.TheVeggieCart.Controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.neo4j.Neo4jProperties.Authentication;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,10 +20,15 @@ import com.TheVeggieCart.Model.Feedback;
 import com.TheVeggieCart.Model.Orders;
 import com.TheVeggieCart.Model.User;
 import com.TheVeggieCart.Model.VegetableDTO;
+import com.TheVeggieCart.Service.IOrderService;
 import com.TheVeggieCart.Service.PasswordChangeRequest;
 
 @RestController
+@CrossOrigin
 public class UserController {
+	
+	@Autowired
+	private IOrderService orderService;
 
     @PostMapping("/users")
     public ResponseEntity<String> registerUser(@RequestBody User user) {
@@ -92,7 +99,7 @@ public class UserController {
 
     @GetMapping("/orders")
     public ResponseEntity<List<Orders>> getUserOrders() {
-        return new ResponseEntity<>(null, HttpStatus.OK);
+        return new ResponseEntity<>(orderService.viewAllOrders(), HttpStatus.OK);
     }
 
     @GetMapping("/orders/{orderId}")

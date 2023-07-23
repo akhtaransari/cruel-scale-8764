@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.TheVeggieCart.Exception.VegetableNotFoundException;
 import com.TheVeggieCart.Model.VegetableDTO;
 import com.TheVeggieCart.Repository.VegetableDTORepository;
 
+@Service
 public class IVegetableServiceImpl implements IVegetableService {
 
 	@Autowired
@@ -62,6 +64,13 @@ public class IVegetableServiceImpl implements IVegetableService {
 			throw new VegetableNotFoundException("No Vegetable found!");
 		}
 		return vl;
+	}
+
+	@Override
+	public String deleteVeg(Long id) {
+		// TODO Auto-generated method stub
+		vegetableDTORepository.deleteById(id);
+		return "Deleted";
 	}
 
 }

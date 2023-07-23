@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="Customer.css" />
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar">
-      <div class="navbar-left">TheVeggieCart</div>
-      <div class="navbar-center">Admin Dashboard</div>
+      <div class="navbar-left">
+        <span class="company-name">TheVeggieCart</span>
+      </div>
+      <div class="navbar-center">
+        <a href="stock.html">Manage Stock</a>
+        <a href="customer.html" class="active">Manage Customer</a>
+        <a href="feedback.html">Manage Feedback</a>
+      </div>
       <div class="navbar-right">
         <button class="signout-button">Sign Out</button>
       </div>
@@ -21,10 +26,8 @@
       <table class="customer-table">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Mobile Number</th>
-            <th>Email</th>
+            <th>OrderId</th>
+            <th>CustomerId</th>
             <th>Orders</th>
             <th>Status</th>
             <th>Actions</th>
