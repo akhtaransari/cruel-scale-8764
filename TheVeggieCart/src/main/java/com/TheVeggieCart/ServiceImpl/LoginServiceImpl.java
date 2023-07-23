@@ -20,12 +20,9 @@ public class LoginServiceImpl implements ILoginService {
 	
     @Override
     public User validateLogin(Authentication auth) {
-    	
     	Optional<User> opt= userRepository.findByUsername(auth.getUsername());
 		 if(opt.isEmpty()) throw new NotFoundException("No user found") ;
-		 User user = opt.get();
-    	
-        return userRepository.save(user);
+        return opt.get();
     }
 
     @Override

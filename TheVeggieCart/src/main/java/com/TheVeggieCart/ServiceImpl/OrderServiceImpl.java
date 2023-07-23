@@ -10,20 +10,12 @@ import com.TheVeggieCart.Exception.OrderNotFoundException;
 import com.TheVeggieCart.Exception.UserNotFoundException;
 import com.TheVeggieCart.Model.Customer;
 import com.TheVeggieCart.Model.Orders;
-import com.TheVeggieCart.Repository.CartRepository;
 import com.TheVeggieCart.Repository.CustomerRepository;
 import com.TheVeggieCart.Repository.OrdersRepository;
-import com.TheVeggieCart.Repository.VegetableDTORepository;
 import com.TheVeggieCart.Service.IOrderService;
 
 @Service
 public class OrderServiceImpl implements IOrderService {
-
-	@Autowired
-	private VegetableDTORepository vegetableRepository;
-
-	@Autowired
-	private CartRepository cartRepository;
 
 	@Autowired
 	private CustomerRepository customerRepository;
@@ -68,13 +60,11 @@ public class OrderServiceImpl implements IOrderService {
 	@Override
 	public Orders cancelOrder(int orderid) {
 		Optional<Orders> orders = ordersRepository.findById(orderid);
-
 		Orders o = orders.get();
 
 		if (o == null) {
 			throw new OrderNotFoundException("order not found!");
 		}
-
 		ordersRepository.delete(o);
 		return o;
 	}

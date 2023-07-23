@@ -1,12 +1,8 @@
 
 package com.TheVeggieCart.Model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -31,8 +27,6 @@ public class Cart {
 	private Customer customerId;
 	
 	@OneToMany
-	private List<VegetableDTO> vegitableList=new ArrayList<>();
-	
-	
-	
+	private Set<VegetableDTO> vegitableList;
+
 }
