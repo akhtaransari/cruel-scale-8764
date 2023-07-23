@@ -27,10 +27,10 @@ public class FeedBack {
 	
 	
 	@PostMapping("/addFeedback/{vegetableId}/{customerId}")
-    public ResponseEntity<Feedback> addFeedback(@RequestBody Feedback feedback,@PathVariable Long vegetableId,@PathVariable Integer customerId) {
+    public ResponseEntity<Feedback> addFeedback(@RequestBody Feedback feedback,@PathVariable Integer Order,@PathVariable Integer customerId) {
        
-            log.info("Added feedback for vegetable ID: {} by customer ID: {}", vegetableId, customerId);
-            return new ResponseEntity<>(feedbackService.addFeedBack(feedback, vegetableId, customerId),HttpStatus.ACCEPTED);
+            log.info("Added feedback for vegetable ID: {} by customer ID: {}", Order, customerId);
+            return new ResponseEntity<>(feedbackService.addFeedBack(feedback, Order, customerId),HttpStatus.ACCEPTED);
     }
 
     @PutMapping("/updateFeedback")

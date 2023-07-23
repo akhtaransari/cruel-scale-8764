@@ -1,14 +1,10 @@
 
 package com.TheVeggieCart.Model;
 
-<<<<<<< HEAD
+
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
-=======
-import java.util.Set;
-
->>>>>>> main
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -29,7 +25,7 @@ public class Cart {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer cartId;
 
-<<<<<<< HEAD
+
 	@ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;
@@ -40,13 +36,5 @@ public class Cart {
 	
 	
 	
-=======
-	@OneToOne
-	@NotNull
-	private Customer customerId;
-	
-	@OneToMany
-	private Set<VegetableDTO> vegitableList;
 
->>>>>>> main
 }
