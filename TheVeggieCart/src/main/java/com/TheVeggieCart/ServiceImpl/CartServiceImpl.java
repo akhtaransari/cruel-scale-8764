@@ -1,6 +1,5 @@
 package com.TheVeggieCart.ServiceImpl;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -11,7 +10,6 @@ import com.TheVeggieCart.Exception.UserNotFoundException;
 import com.TheVeggieCart.Exception.VegetableNotFoundException;
 import com.TheVeggieCart.Model.Customer;
 import com.TheVeggieCart.Model.VegetableDTO;
-import com.TheVeggieCart.Repository.CartRepository;
 import com.TheVeggieCart.Repository.CustomerRepository;
 import com.TheVeggieCart.Repository.VegetableDTORepository;
 import com.TheVeggieCart.Service.ICartService;
@@ -22,12 +20,7 @@ public class CartServiceImpl implements ICartService {
 	private VegetableDTORepository vegetableRepository;
 
 	@Autowired
-	private CartRepository cartRepository;
-
-	@Autowired
 	private CustomerRepository customerRepository;
-
-	private List<VegetableDTO> cartItems = new ArrayList<>();
 
 	@Override
 	public Customer addToCart(VegetableDTO veg, Integer customerId) {

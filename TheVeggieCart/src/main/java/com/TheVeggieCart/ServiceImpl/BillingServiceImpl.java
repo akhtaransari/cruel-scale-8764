@@ -8,26 +8,18 @@ import org.springframework.stereotype.Service;
 import com.TheVeggieCart.Exception.BillNotFoundException;
 import com.TheVeggieCart.Model.BillingDetails;
 import com.TheVeggieCart.Repository.BillingDetailsRepository;
-import com.TheVeggieCart.Repository.CustomerRepository;
-import com.TheVeggieCart.Repository.OrdersRepository;
 import com.TheVeggieCart.Service.IBillingService;
 @Service
 public class BillingServiceImpl implements IBillingService {
 	
-	 @Autowired
-	    private OrdersRepository ordersRepository;
-	    @Autowired
-	    private CustomerRepository customerRepository;
-	    @Autowired
-	   private  BillingDetailsRepository billingRepository;
-
-//	    @Autowired
-//	    private AddressRepository addressRepository;
+	   
+    @Autowired
+    private  BillingDetailsRepository billingRepository;
 
 	@Override
 	public BillingDetails addBill(BillingDetails bill) {
 		if(bill == null) {
-			throw new BillNotFoundException("Bill not found with ID: " + bill.getBillingId());
+			throw new BillNotFoundException("Bill not found");
 		}
 		return billingRepository.save(bill);
 	}

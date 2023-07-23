@@ -7,6 +7,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import com.TheVeggieCart.Exception.OrderNotFoundException;
 import com.TheVeggieCart.Exception.UserNotFoundException;
 import com.TheVeggieCart.Model.Customer;
@@ -18,7 +19,7 @@ public class CustomerServiceImpl implements ICustomerService {
 	
 	@Autowired
     private CustomerRepository customerRepository;
-
+	
 	@Override
 	public Customer addCustomer(Customer customer) {
 		// TODO Auto-generated method stub
@@ -39,27 +40,8 @@ public class CustomerServiceImpl implements ICustomerService {
 		c1.setMobileNumber(c1.getMobileNumber());
 		c1.setName(c1.getName());
 		c1.setVegitableList(c1.getVegitableList());
-		c1.setPassword(c1.getPassword());
-		c1.setConfirmPassword(c1.getConfirmPassword());
-		
         return customerRepository.save(customer);
 	}
-
-	@Override
-	public Customer removeCustomer(Customer customer) {
-		Optional<Customer> cus = customerRepository.findById(customer.getCustomerId());
-
-		Customer c = cus.get();
-
-		if (c == null) {
-			throw new OrderNotFoundException("order not found!");
-		}
-
-		customerRepository.delete(c);
-		return c;
-	}
-		
-		
 
 	@Override
 	public Customer viewCustomerById(Integer customerID) {
@@ -81,6 +63,16 @@ public class CustomerServiceImpl implements ICustomerService {
 		}
 		return cl;
 		
+	}
+
+	@Override
+	public Customer removeCustomer(Integer customerId) {
+		Optional<Customer> cus = customerRepository.findById(customerId);
+		Customer c = cus.get();
+		
+		if (cus.isEmpty()) throw new UserNotFoundException("Customer not found!");
+		customerRepository.delete(c);
+		return c;
 	}
 
 }

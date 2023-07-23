@@ -46,8 +46,9 @@ public class VegetableServiceImpl implements IVegetableService {
 	}
 
 	@Override
-	public VegetableDTO removeVegetable(VegetableDTO veg) {
-		Optional<VegetableDTO> vd = vegetableDTORepository.findById(veg.getVegId());
+	public VegetableDTO removeVegetable(Long vegId) {
+		Optional<VegetableDTO> vd = vegetableDTORepository.findById(vegId);
+		
 
 		VegetableDTO v = vd.get();
 

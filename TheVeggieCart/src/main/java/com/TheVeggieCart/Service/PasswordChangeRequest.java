@@ -11,9 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class PasswordChangeRequest {	
-	private Long userId;
-	@JsonProperty(access = Access.WRITE_ONLY)
-	private String oldPassword;
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private String newPassword;
 	

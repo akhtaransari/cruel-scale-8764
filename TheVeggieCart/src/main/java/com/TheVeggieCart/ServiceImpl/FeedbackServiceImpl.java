@@ -18,7 +18,7 @@ import com.TheVeggieCart.Repository.VegetableDTORepository;
 import com.TheVeggieCart.Service.IFeedbackService;
 
 @Service
-public class IfeedbackServiceImpl implements IFeedbackService {
+public class FeedbackServiceImpl implements IFeedbackService {
 
     @Autowired
     private FeedbackRepository feedbackRepository;

@@ -1,8 +1,6 @@
 package com.TheVeggieCart.Model;
 
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
@@ -13,7 +11,6 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -44,18 +41,10 @@ public class Customer extends User{
 	@NotNull
 	@Email
 	private String email;
-
-	@NotNull
-	@ValidPassword
-	private String password;
-
-	@NotNull
-	@Transient
-	@ValidPassword
-	private String confirmPassword;
 	
 	@OneToMany
-	private List<VegetableDTO> vegitableList=new ArrayList<>();
-	
+	private Set<VegetableDTO> vegitableList;
+	@OneToMany
+	private Set<Cart> carts;
 
 }
