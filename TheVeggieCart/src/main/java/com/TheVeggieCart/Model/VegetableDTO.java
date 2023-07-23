@@ -1,12 +1,19 @@
 package com.TheVeggieCart.Model;
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> main
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+<<<<<<< HEAD
+=======
+import jakarta.validation.constraints.Min;
+>>>>>>> main
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.TheVeggieCart.Service;
+package com.TheVeggieCart.ServiceImpl;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,9 +9,14 @@ import org.springframework.stereotype.Service;
 import com.TheVeggieCart.Exception.VegetableNotFoundException;
 import com.TheVeggieCart.Model.VegetableDTO;
 import com.TheVeggieCart.Repository.VegetableDTORepository;
+import com.TheVeggieCart.Service.IVegetableService;
 
 @Service
+<<<<<<< HEAD:TheVeggieCart/src/main/java/com/TheVeggieCart/Service/IVegetableServiceImpl.java
 public class IVegetableServiceImpl implements IVegetableService {
+=======
+public class VegetableServiceImpl implements IVegetableService {
+>>>>>>> main:TheVeggieCart/src/main/java/com/TheVeggieCart/ServiceImpl/VegetableServiceImpl.java
 
 	@Autowired
 	private VegetableDTORepository vegetableDTORepository;
@@ -45,8 +50,9 @@ public class IVegetableServiceImpl implements IVegetableService {
 	}
 
 	@Override
-	public VegetableDTO removeVegetable(VegetableDTO veg) {
-		Optional<VegetableDTO> vd = vegetableDTORepository.findById(veg.getVegId());
+	public VegetableDTO removeVegetable(Long vegId) {
+		Optional<VegetableDTO> vd = vegetableDTORepository.findById(vegId);
+		
 
 		VegetableDTO v = vd.get();
 

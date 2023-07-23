@@ -1,14 +1,16 @@
-package com.TheVeggieCart.Service;
+package com.TheVeggieCart.ServiceImpl;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.webjars.NotFoundException;
 
 import com.TheVeggieCart.Exception.AdminNotFoundException;
 import com.TheVeggieCart.Model.Admin;
-import com.TheVeggieCart.Model.Customer;
 import com.TheVeggieCart.Repository.AdminRepository;
+import com.TheVeggieCart.Service.IAdminService;
 
 @Service
 public class AdminServiceImpl implements IAdminService {
@@ -37,12 +39,13 @@ public class AdminServiceImpl implements IAdminService {
     }
 
     @Override
-    public Admin removeAdmin(Admin admin) {
-        if (!adminRepository.existsById(admin.getCustomerId())) {
-            throw new AdminNotFoundException("Admin not found with ID: " + admin.getCustomerId());
+    public Admin removeAdmin(Integer adminId) {
+    	Optional<Admin> findById = adminRepository.findById(adminId);
+        if (findById.isEmpty()) {
+            throw new AdminNotFoundException("Admin not found with ID: " + adminId);
         }
-        adminRepository.delete(admin);
-        return admin;
+        adminRepository.deleteById(adminId);
+        return findById.get();
     }
 
     @Override
@@ -51,4 +54,10 @@ public class AdminServiceImpl implements IAdminService {
                 .orElseThrow(() -> new AdminNotFoundException("Admin not found with ID: " + admin.getCustomerId()));
     }
 
+	@Override
+	public List<Admin> viewAdmins() {
+		List<Admin> findAll = adminRepository.findAll();
+		if (findAll.isEmpty()) throw new NotFoundException("no admin here");
+		return findAll;
+	}
 }

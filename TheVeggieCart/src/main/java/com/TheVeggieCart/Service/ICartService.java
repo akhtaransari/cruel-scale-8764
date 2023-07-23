@@ -2,7 +2,6 @@ package com.TheVeggieCart.Service;
 
 import java.util.List;
 
-import com.TheVeggieCart.Model.CartDTO;
 import com.TheVeggieCart.Model.Customer;
 import com.TheVeggieCart.Model.VegetableDTO;
 

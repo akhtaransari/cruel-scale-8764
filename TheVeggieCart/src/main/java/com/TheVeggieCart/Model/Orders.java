@@ -2,7 +2,10 @@ package com.TheVeggieCart.Model;
 
 import java.util.List;
 
+<<<<<<< HEAD
 import jakarta.persistence.CascadeType;
+=======
+>>>>>>> main
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;

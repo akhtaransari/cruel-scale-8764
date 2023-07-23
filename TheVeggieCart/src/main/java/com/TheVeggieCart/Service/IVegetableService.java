@@ -9,7 +9,7 @@ public interface IVegetableService {
 
 	VegetableDTO updateVegetable(VegetableDTO veg);
 
-	VegetableDTO removeVegetable(VegetableDTO veg);
+	VegetableDTO removeVegetable(Long vegId);
 
 	String deleteVeg(Long id);
 	List<VegetableDTO> viewAllVegetables();
