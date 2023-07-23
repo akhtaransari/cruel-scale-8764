@@ -43,9 +43,6 @@ body {
   background-color: #d32f2f;
 }
 
-/* Navbar styles */
-/* ... (Same as previous examples) ... */
-
 /* Container styles */
 .container {
   margin: 20px;
@@ -55,41 +52,25 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Stock table styles */
-.stock-table {
+/* Feedback table styles */
+.feedback-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-.stock-table th,
-.stock-table td {
+.feedback-table th,
+.feedback-table td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
-.stock-table th {
+.feedback-table th {
   background-color: #f2f2f2;
 }
 
-/* Add button styles */
-.add-button {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  margin-top: 20px;
-}
-
-.add-button:hover {
-  background-color: #45a049;
-}
-
-/* Popup styles for Update and Add forms */
+/* Styles for the order details popup */
 .popup-container {
   position: fixed;
   top: 0;
@@ -115,39 +96,28 @@ h2 {
   margin-bottom: 10px;
 }
 
-.popup form {
-  margin-top: 10px;
-}
-
-.popup label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.popup input[type="text"],
-.popup input[type="number"] {
+.popup table {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border-collapse: collapse;
 }
 
-.popup button {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s;
+.popup th,
+.popup td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.popup th {
+  background-color: #f2f2f2;
 }
 
 .popup button.close-button {
   background-color: #f44336;
-  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .popup button.close-button:hover {
   background-color: #d32f2f;
+  cursor: pointer;
 }

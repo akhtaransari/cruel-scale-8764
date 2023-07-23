@@ -11,9 +11,10 @@ import com.TheVeggieCart.Exception.UserNotFoundException;
 import com.TheVeggieCart.Exception.VegetableNotFoundException;
 import com.TheVeggieCart.Model.Customer;
 import com.TheVeggieCart.Model.Feedback;
-import com.TheVeggieCart.Model.VegetableDTO;
+import com.TheVeggieCart.Model.Orders;
 import com.TheVeggieCart.Repository.CustomerRepository;
 import com.TheVeggieCart.Repository.FeedbackRepository;
+import com.TheVeggieCart.Repository.OrdersRepository;
 import com.TheVeggieCart.Repository.VegetableDTORepository;
 import com.TheVeggieCart.Service.IFeedbackService;
 
@@ -28,9 +29,12 @@ public class FeedbackServiceImpl implements IFeedbackService {
 
     @Autowired
     private VegetableDTORepository vegetableDTORepository;
+    
+    @Autowired
+    private OrdersRepository orderDTORepository;
 
     @Override
-    public Feedback addFeedBack(Feedback feedBack, Long vegetableId, Integer customerId)
+    public Feedback addFeedBack(Feedback feedBack, Integer orderId, Integer customerId)
             throws VegetableNotFoundException, UserNotFoundException {
         Optional<Customer> customerOptional = customerRepository.findById(customerId);
         if (customerOptional.isEmpty()) {
@@ -38,14 +42,14 @@ public class FeedbackServiceImpl implements IFeedbackService {
         }
 
         // Check if the vegetable exists
-        Optional<VegetableDTO> vegetableOptional = vegetableDTORepository.findById(vegetableId);
+        Optional<Orders> vegetableOptional = orderDTORepository.findById(orderId);
         if (vegetableOptional.isEmpty()) {
-            throw new VegetableNotFoundException("Vegetable is not present with Id: " + vegetableId);
+            throw new VegetableNotFoundException("Vegetable is not present with Id: " + orderId);
         }
 
         // Set the customer and vegetable for the feedback
-        feedBack.setCustomerId(customerOptional.get());
-        feedBack.setVegetableId(vegetableOptional.get());
+        feedBack.setCustomer(customerOptional.get());
+        feedBack.setOrder(vegetableOptional.get());
 
         // Set the feedback date and time to the current date and time
         //feedBack.setFeedbackDateTime(LocalDateTime.now());
