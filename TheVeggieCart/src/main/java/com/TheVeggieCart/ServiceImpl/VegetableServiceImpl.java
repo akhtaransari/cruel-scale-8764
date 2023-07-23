@@ -12,11 +12,8 @@ import com.TheVeggieCart.Repository.VegetableDTORepository;
 import com.TheVeggieCart.Service.IVegetableService;
 
 @Service
-<<<<<<< HEAD:TheVeggieCart/src/main/java/com/TheVeggieCart/Service/IVegetableServiceImpl.java
-public class IVegetableServiceImpl implements IVegetableService {
-=======
 public class VegetableServiceImpl implements IVegetableService {
->>>>>>> main:TheVeggieCart/src/main/java/com/TheVeggieCart/ServiceImpl/VegetableServiceImpl.java
+
 
 	@Autowired
 	private VegetableDTORepository vegetableDTORepository;
