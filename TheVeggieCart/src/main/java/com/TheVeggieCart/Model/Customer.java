@@ -1,12 +1,14 @@
 package com.TheVeggieCart.Model;
 
-import java.util.Set;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreType;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.Transient;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -43,8 +45,11 @@ public class Customer extends User{
 	private String email;
 	
 	@OneToMany
-	private Set<VegetableDTO> vegitableList;
+	@JsonIgnore
+	private List<VegetableDTO> vegitableList;
+	
 	@OneToMany
-	private Set<Cart> carts;
+	@JsonIgnore
+	private List<Cart> carts;
 
 }

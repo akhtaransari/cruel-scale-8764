@@ -31,7 +31,7 @@ public class Orders {
 	@JoinColumn(name="customerid")
 	private Customer customer;
 	
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "order_id")
     private List<VegetableDTO> vegetables;
 	

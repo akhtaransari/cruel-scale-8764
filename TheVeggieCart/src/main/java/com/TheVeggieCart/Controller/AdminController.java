@@ -27,7 +27,6 @@ import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @CrossOrigin
-@RequestMapping
 @Slf4j
 public class AdminController {
 

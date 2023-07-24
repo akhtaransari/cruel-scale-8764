@@ -34,7 +34,7 @@ function populateTable(stockList) {
             vegetable
           )})">Update</button>
           <button class="delete-button" onclick="deleteVegetable(${
-            vegetable.vegetableId
+            vegetable.vegId
           })">Delete</button>
         </td>
       `;
@@ -100,7 +100,7 @@ async function deleteVegetable(vegetableId) {
   if (!confirmDelete) return;
 
   try {
-    const deleteURL = `http://localhost:8080/VegetablesDelete/admin/${vegetableId}`;
+    const deleteURL = `http://localhost:8080/vegetabales/removeVegetable/${vegetableId}`;
     const response = await fetch(deleteURL, { method: "DELETE" });
 
     if (response.ok) {
@@ -184,6 +184,7 @@ function openAddProductForm() {
       quantity: parseFloat(document.getElementById("add-quantity").value),
     };
 
+    console.log(newVegetable);
     addVegetable(newVegetable);
     closePopup();
   });
@@ -195,7 +196,7 @@ function openAddProductForm() {
 // Function to add a new vegetable
 async function addVegetable(newVegetable) {
   try {
-    const addURL = "http://localhost:8080/VegetablesAdd/admin";
+    const addURL = "http://localhost:8080/vegetabales/addVegetable";
     const response = await fetch(addURL, {
       method: "POST",
       headers: {

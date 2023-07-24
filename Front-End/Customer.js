@@ -91,8 +91,9 @@ async function fetchOrderDetails() {
     const response = await fetch(getOrderDetailsURL);
     const data = await response.json();
     console.log(data);
-    if (data && data.orders && data.orders.length > 0) {
-      populateTable(data.orders);
+    if (data && data.length > 0) {
+      console.log(data);
+      populateTable(data);
     } else {
       alert("No order details found.");
     }
@@ -183,33 +184,25 @@ function openOrderDetails(order) {
 }
 
 function populateTable(orders) {
-  // ... (Previous implementation for populating the table) ...
   const tableBody = document.getElementById("customer-body");
   tableBody.innerHTML = "";
-  orders.forEach((customer) => {
-    customer.orders.forEach((order) => {
-      const newRow = document.createElement("tr");
-      newRow.innerHTML = `
-          <td>${order.orderId}</td>
-          <td>${customer.id}</td>
-          <td>
-            <button class="order-details-button" onclick="openOrderDetails(${JSON.stringify(
-              order
-            )})">Order Details</button>
-          </td>
-          <td>$${order.totalAmount.toFixed(2)}</td>
-          <td>${order.status}</td>
-          <td>
-            <button class="update-button" onclick="openUpdateForm(${JSON.stringify(
-              order
-            )})">Update</button>
-            <button class="cancel-button" onclick="deleteOrder(${
-              order.orderId
-            })">Cancel</button>
-          </td>
-        `;
-      tableBody.appendChild(newRow);
-    });
+
+  orders.forEach((order) => {
+    const newRow = document.createElement("tr");
+    newRow.innerHTML = `
+      <td>${order.orderId}</td>
+      <td>${order.customer.userId}</td>
+      <td>
+        <button class="order-details-button" onclick="openOrderDetails(${order.orderId})">Order Details</button>
+      </td>
+      <td>${order.status}</td>
+      <td>
+        <button class="update-button" onclick="openUpdateForm(${order.orderId})">Update</button>
+        <button class="cancel-button" onclick="deleteOrder(${order.orderId})">Cancel</button>
+      </td>
+    `;
+
+    tableBody.appendChild(newRow);
   });
 }
 

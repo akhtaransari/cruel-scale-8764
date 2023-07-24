@@ -25,8 +25,8 @@ function populateTable(feedbackList) {
     const newRow = document.createElement("tr");
     newRow.innerHTML = `
         <td>${feedback.feedbackId}</td>
-        <td>${feedback.customerId}</td>
-        <td>${feedback.vegetableId}</td>
+        <td>${feedback.customer.userId}</td>
+        <td>${feedback.order.orderId}</td>
         <td>${feedback.rating}</td>
         <td>${feedback.comments}</td>
       `;

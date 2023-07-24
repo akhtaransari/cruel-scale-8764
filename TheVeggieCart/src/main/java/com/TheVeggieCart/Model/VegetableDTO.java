@@ -6,29 +6,29 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class VegetableDTO {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long vegId;
-	
-	@NotNull
+
 	@Size(min=3)
 	private String name;
 	
-	@NotNull
+
 	private String type; 
-	
-	@NotNull
+
 	private Double price;
 	
-	@NotNull
+
 	private Double quantity;
 
   
