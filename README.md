@@ -28,8 +28,8 @@ The project will be completed within 4 days, with tasks assigned as follows:
 ### Sheik Kalibullah
 - Collaborate with the backend team for seamless integration
 - Assist in designing the API endpoints and data models
-- Conduct thorough testing and bug fixing
-- Assist in documentation and project setup
+- Implement the API endpoints for handling customer orders
+- Design and implement the database using JPA with Hibernate
 
 ## Project Implementation Timeline
 
